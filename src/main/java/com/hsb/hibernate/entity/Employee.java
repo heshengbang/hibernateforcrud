@@ -86,7 +86,7 @@ public class Employee {
         this.manager = manager;
     }
 
-    @Column(name = "HIDE_DATE", nullable = false)
+    @Column(name = "HIRE_DATE", nullable = false)
     @Temporal(TemporalType.DATE)
     public Date getHideDate() {
         return hideDate;
