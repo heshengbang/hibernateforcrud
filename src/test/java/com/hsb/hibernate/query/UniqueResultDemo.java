@@ -26,7 +26,7 @@ public class UniqueResultDemo {
                 + " where e.empId= :empId ";
         Query<Employee> query = session.createQuery(sql);
         query.setParameter("empId", empId);
-        return (Employee) query.getSingleResult();
+        return query.getSingleResult();
     }
 
     public static void main(String[] args) {

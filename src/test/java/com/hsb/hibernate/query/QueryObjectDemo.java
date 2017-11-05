@@ -29,6 +29,8 @@ public class QueryObjectDemo {
         }
         // Commit data.
         session.getTransaction().commit();
+        session.close();
+        sessionFactory.close();
     }
 }
 
